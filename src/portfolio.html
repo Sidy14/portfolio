@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Blog</title>
+        <link href="portfolio.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    
+    <body>
+
+        <div class="navbar">
+            
+            <a href="#contact">Contact</a>
+            <a href="#skills">Skills</a>
+            <a href="#project">Projects</a>
+            <a href="#about">About</a>
+            <a class="active" href="#home">Home</a>
+          </div>
+
+        <!-- header start -->
+        <div id="header" class="section">
+            <img alt="" class="img-circle" src="https://image.freepik.com/free-vector/man-profile-cartoon_18591-58482.jpg">
+            <p>Siddhesh Kubal</p>
+        </div>
+        <!-- header end -->
+        
+        <!-- About Me section start -->
+        <div class="section" id="about">
+            <h1><span>About Me</span></h1>
+            <p>
+                Hey! I'm <strong>Siddhesh</strong>.I’ve always been a great problem solver, an independent extrovert, and a technophile obsessed with the latest devices. Today, I’m working from home as a software engineer for Quantiphi, Inc., and I get to show off all these elements of who I am.
+
+                I started learning to code when I was a teenager, though it was always more of a hobby than a career focus. After a college education in Computer Science, and continuing to pursue that hobby, I realized software engineering was the right field for me.
+            </p>
+            <p class="quote">"Declare variables, not war"</p>
+        </div>
+        <!-- About Me section end -->
+        
+        <!-- My work section start -->
+        <div class="section" id="project">
+            <h1><span>My work</span></h1>
+        </div>
+        <div class="flex-container">
+            <div class="container">
+              <h4><b>Performance management system App</b></h4> 
+              <p>worked on the backend,
+                creating several Rest APIs for Authentication, Goals Management, and
+                Employee Tracking using Django Rest Framework.</p> 
+            </div>
+            <div class="container">
+              <h4><b>Online Blogging App</b></h4> 
+              <p>Created numerous REST APIs that enable users to
+                create and modify blogs with various tags, as well as read, like, and
+                comment on other people's blogs and subscribe to their favorite
+                bloggers.</p> 
+            </div>
+            <div class="container">
+              <h4><b>Movie Recommendation System</b></h4> 
+              <p>worked on web
+                Implementations of Recommendation System using Python Flask and
+                MySQL Database.</p> 
+            </div> 
+            <div class="container">
+              <h4><b>Budget Management Application:</b></h4> 
+              <p>Calculating a budget based on CRUD actions. The user can provide
+                the income details, expenses details and can see the budget at
+                the top with details stored.</p> 
+            </div>
+        </div> 
+        <!-- My work section end -->
+        
+        
+        <!-- My Skills section start -->
+        <div class="section" id="skills">
+            <h1><span>My Skills</span></h1>
+            <ul>
+                <li>C, C++, Python <br />
+                    <progress min="0" max="100" value="90"></progress>
+                </li>
+                <li>Data Structures and Algo <br />
+                    <progress min="0" max="100" value="90"></progress>
+                </li>
+                <li>Django and Flask <br />
+                    <progress min="0" max="100" value="80"></progress>
+                </li>
+
+            </ul>
+        </div>
+        <!-- My Skills section end -->
+        
+        <!-- Form section start -->
+       <div class="section" id="contact">
+            <h1><span>Contact Me</span></h1>
+            
+            <svg class="face" height="100" width="100">
+                <circle cx="50" cy="50" r="50" fill="#FDD835"/>
+                <circle cx="30" cy="30" r="10" fill="#FFFFFF"/>
+                <circle cx="70" cy="30" r="10" fill="#FFFFFF"/>
+                <circle cx="30" cy="30" r="5" fill="#000000"/>
+                <circle cx="70" cy="30" r="5" fill="#000000"/>
+                <path d="M 30 70 q 20 20 40 0" stroke="#FFFFFF" stroke-width="5" fill="none" />
+            </svg>
+                 
+            <form>
+                <input name="name" placeholder="Name" type="text" required /><br/>
+                <input name="email" placeholder="Email" type="email" required /><br/>
+                <textarea name="message" placeholder="Message" required ></textarea>
+                <input type="submit" value="SEND" class="submit" />
+            </form>
+        </div>
+        <!-- Form section end -->
+        
+        <!-- Contacts section start -->
+        <div class="section" id="contacts">
+            <h1><span>Follow Me</span></h1>
+            <div>
+                <a href="#">
+                    <img alt="Insta" src="https://workingwithdog.com/wp-content/uploads/2016/05/new_instagram_logo-1024x1024.jpg" />
+                </a>
+                <a href="#">
+                    <img alt="Facebook" src="https://www.sololearn.com/Uploads/icons/facebook.png"/>
+                </a>
+                <a href="#">
+                    <img alt="Twitter" src="https://www.sololearn.com/Uploads/icons/twitter.png" />
+                </a>
+            </div>
+        </div>
+        <!-- Contacts section end -->
+        
+    </body>
+</html>
