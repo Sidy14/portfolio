@@ -8,13 +8,13 @@ const Skills = () => {
                         <progress min="0" max="100" value="95"></progress>
                     </li>
                     <li>Angular and React JS <br />
-                        <progress min="0" max="100" value="75"></progress>
+                        <progress min="0" max="100" value="78"></progress>
                     </li>
                     <li>Javscript, Node.js <br />
                         <progress min="0" max="100" value="85"></progress>
                     </li>
                     <li>MySQL, MongoDB, Firebase, PostgreSQL  <br />
-                        <progress min="0" max="100" value="80"></progress>
+                        <progress min="0" max="100" value="85"></progress>
                     </li>
                     <li>Linux, Shell Script  <br />
                         <progress min="0" max="100" value="70"></progress>
