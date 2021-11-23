@@ -4,16 +4,24 @@ const Skills = () => {
             <div className="section">
                 <h1><span>My Skills</span></h1>
                 <ul>
-                    <li>C, C++, Python <br />
-                        <progress min="0" max="100" value="90"></progress>
+                    <li>HTML, CSS, JQuery, Bootstrap <br />
+                        <progress min="0" max="100" value="95"></progress>
                     </li>
-                    <li>Data Structures and Algo <br />
-                        <progress min="0" max="100" value="90"></progress>
+                    <li>Angular and React JS <br />
+                        <progress min="0" max="100" value="75"></progress>
                     </li>
-                    <li>Django and Flask <br />
+                    <li>Javscript, Node.js <br />
+                        <progress min="0" max="100" value="85"></progress>
+                    </li>
+                    <li>MySQL, MongoDB, Firebase, PostgreSQL  <br />
                         <progress min="0" max="100" value="80"></progress>
                     </li>
-
+                    <li>Linux, Shell Script  <br />
+                        <progress min="0" max="100" value="70"></progress>
+                    </li>
+                    <li>GCP, AWS  <br />
+                        <progress min="0" max="100" value="70"></progress>
+                    </li>
                 </ul>
             </div>
         </div>
