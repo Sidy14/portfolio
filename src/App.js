@@ -7,7 +7,7 @@ import Skills from './Skills';
 import Work from './Work';
 import Follow from './Follow';
 import { useEffect } from 'react';
-import { workArr } from './data';
+import { projects, skills } from './data';
 import Observer from './intersection-observer';
 
 function App() {
@@ -48,8 +48,8 @@ function App() {
       <Navbar />
       <div className="padding10">
         <About />
-        <Skills />
-        <Work data={workArr}/>
+        <Skills data={skills}/>
+        <Work data={projects}/>
         <Contact />
         <Follow />
       </div>

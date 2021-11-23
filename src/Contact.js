@@ -4,11 +4,13 @@ const Contact = () => {
     const [state, setstate] = useState({
         fields: {
             name: '',
-            email: ''
+            email: '',
+            message: ''
         },
         errors: {
             name: '',
-            email: ''
+            email: '',
+            message: ''
         }
     })
 
@@ -20,7 +22,7 @@ const Contact = () => {
         const errorMessage = {
             notEmpty: " shoudn't be empty",
             onlyLetters: "Only letters please",
-            inValid:  " is not valid"
+            inValidEmail:  "Valid email please"
         };
 
 
@@ -51,7 +53,7 @@ const Contact = () => {
 
            if (!(lastAtPos < lastDotPos && lastAtPos > 0 && fields["email"].indexOf('@@') === -1 && lastDotPos > 2 && (fields["email"].length - lastDotPos) > 2)) {
               formIsValid = false;
-              errors["email"] = `Email ${errorMessage.inValid}`;
+              errors["email"] = `Email ${errorMessage.inValidEmail}`;
             }
        }  
 
@@ -77,7 +79,10 @@ const Contact = () => {
         event.preventDefault();
 
         if(handleValidation()){
+            const fields = state.fields;
+            const subject = 'Howdy Siddhesh!'
             console.log('form validated');
+            window.open(`mailto:'siddh14.kubal@gmail.com?subject=${subject}&body=${fields.message}`);
         } else {
             console.log('form not valid');
         }
