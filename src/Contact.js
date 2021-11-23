@@ -35,7 +35,7 @@ const Contact = () => {
         }
   
         if(fields["name"].length > 0){
-           if(!fields["name"].match(/^[a-zA-Z]+$/)){
+           if(!fields["name"].match(/^[a-zA-Z\s]*$/)){
               formIsValid = false;
               errors["name"] = errorMessage.onlyLetters;
            }        
@@ -79,10 +79,10 @@ const Contact = () => {
         event.preventDefault();
 
         if(handleValidation()){
-            const fields = state.fields;
-            const subject = 'Howdy Siddhesh!'
             console.log('form validated');
-            window.open(`mailto:'siddh14.kubal@gmail.com?subject=${subject}&body=${fields.message}`);
+            const fields = state.fields;
+            const subject = 'Ciao Siddhesh!'
+            window.open(`mailto:siddh14.kubal@gmail.com?subject=${subject}&body=${fields.message}`);
         } else {
             console.log('form not valid');
         }
