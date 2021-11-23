@@ -107,14 +107,15 @@ const Contact = () => {
                     <div className="pos-rel">
                         <input name="name" placeholder="Name" type="text" required 
                          onChange={getValue} onFocus={handleFocus}/>
-                        <span className="error-msg">{state.errors["name"]}</span>
+                        <div className="error-msg">{state.errors["name"]}</div>
                     </div>
                     <div className="pos-rel">
                         <input name="email" placeholder="Email" type="email" required onChange={getValue} onFocus={handleFocus}/>
-                        <span className="error-msg">{state.errors["email"]}</span>
+                        <div className="error-msg">{state.errors["email"]}</div>
                     </div>
-                    
-                    <textarea name="message" placeholder="Message" required onChange={getValue} onFocus={handleFocus}></textarea>
+                    <div className="pos-rel">
+                        <textarea name="message" placeholder="Message" required onChange={getValue} onFocus={handleFocus}></textarea>
+                    </div>
                     <button className="submit" onClick={ sendQuery }>Send</button>
                 </form>
             </div>
